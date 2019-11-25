@@ -1,0 +1,63 @@
+:root {
+    --bg-img-path: url(../img/login-bg.jpg);
+    --login-txt-color: #77fcfe;
+    --glow: #73fcfd;
+}
+
+
+.login-bg {
+    background: var(--bg-img-path) top/2000px no-repeat fixed;
+}
+
+.login-form {
+    background: linear-gradient(to right, #12438a, #7ff6);
+    border-radius: 10px 0 0 10px;
+    position: fixed;
+    top: 305px;
+    left: 470px;
+    padding: 25px 25px 55px;
+    height: auto;
+    width: 550px;
+}
+
+.login-form {
+    box-shadow: 0 0 45px var(--glow);
+}
+
+.form-group {
+    width: 350px;
+}
+
+.form-group label {
+    color: var(--login-txt-color);
+    font-size: 20px;
+}
+
+.form-check input {
+    margin-top: .45rem;
+    height: 16px;
+    width: 16px;
+}
+
+input.form-control {
+    padding: .175rem .75rem !important;
+    font-size: var(--font-lg);
+}
+
+input.form-control:focus,
+input.form-check-input:focus {
+    box-shadow: 0 0 20px var(--glow);
+}
+
+span.check {
+    cursor: pointer;
+}
+
+.btn-sz {
+    padding: .575rem .75rem !important;
+    width: 350px;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px var(--glow);
+}
