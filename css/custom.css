@@ -1,0 +1,81 @@
+@import url(root/variables.css);
+@import url(style28.css);
+@import url(login.css);
+
+/*=================================
+    Additional Developer's Code
+=================================*/
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    /* note */
+}
+.style-none {
+    list-style: none;
+}
+a.underline {
+    text-decoration: underline !important;
+}
+a:hover {
+    text-decoration: none;
+}
+.to-left li {
+    float: left;
+}
+.to-right li {
+    float: right;
+}
+.selected,
+.selected:focus {
+    background: #000;
+    display: inline;
+}
+.disabled a {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.disabled:hover a {
+    background: #444;
+    color: #ddd;
+    cursor: not-allowed;
+}
+
+/*
+    Dropdown Menu
+--------------------------*/
+
+#menu li {
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+#menu li ul {
+    display: none;
+    position: absolute;
+    width: 100px;
+    left: 0;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+}
+#menu li:hover > ul {
+    display: block;
+}
+#menu a {
+    padding: 5px 10px;
+    color: var(--menu-text-color) !important;
+    text-align: center;
+    /*    background: #000;*/
+    height: 40px;
+    display: block;
+}
+#menu a:hover {
+    color: var(--menu-text-color) !important;
+    font-weight: 600;
+}
+
+/*
+/end of menu 
+--------------------*/
