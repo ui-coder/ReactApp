@@ -818,6 +818,7 @@
  }
  .navmenu a:hover {
      color: var(--a-text-color);
+     font-weight: 600;
      text-decoration: none;
  }
  #footer {
